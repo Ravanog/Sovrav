@@ -54,7 +54,7 @@ async def start_command(client: Client, message: Message):
                 ids = [int(int(argument[1]) / abs(client.db_channel.id))]
             except:
                 return
-        dlt_msg = await message.reply_sticker("CAACAgIAAxkBAAI5d2V1dOBBBxsXQE90NmXteUw3T_sLAAKrAQACEBptIni-vpHMVGzHHgQ")
+        temp_msg = await message.reply_sticker("CAACAgIAAxkBAAI5d2V1dOBBBxsXQE90NmXteUw3T_sLAAKrAQACEBptIni-vpHMVGzHHgQ")
         try:
             messages = await get_messages(client, ids)
         except:
